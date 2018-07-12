@@ -12,6 +12,7 @@ date: Jul 13, 2018
 >- Physical Oceanographer
 >- Data Plumber
 >- Code Janitor
+>- CI babysitter
 >- Amazon-Dash-Button for conda-forge
 
 
@@ -262,10 +263,10 @@ Finally the title notebook!
 
 
 
-# Non-notebook examples
+# SECOORA Portal
 
-- [https://ioos.noaa.gov/data/catalog](https://ioos.noaa.gov/data/catalog)
-- [https://portal.secoora.org](https://portal.secoora.org)
+<iframe width="700" height="500" src="https://portal.secoora.org"></iframe>
+
 
 # Summary
 
@@ -281,3 +282,8 @@ Finally the title notebook!
 ![](images/twitter-github.png)
 
 ... g-mail, google+, etc.
+
+
+[https://ocefpaf.github.io/2018-SciPy-talk](https://ocefpaf.github.io/2018-SciPy-talk)
+
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages)

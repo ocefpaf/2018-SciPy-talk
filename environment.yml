@@ -11,7 +11,6 @@ dependencies:
   - bqplot
   - cartopy
   - erddapy
-  - folium
   - geolinks
   - geopandas
   - ioos_tools
@@ -29,3 +28,6 @@ dependencies:
   - retrying
   - shapely
   - xlrd
+  - pip:
+    - git+https://github.com/python-visualization/folium
+
