@@ -103,16 +103,15 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
   <p class="date">Jul 13, 2018</p>
 </section>
 
-<section id="a-more-honest-title" class="slide level1">
-<h1>A more honest title</h1>
-<p>I’m going to talk about NOAA data workflow and only show nice notebooks in the end.</p>
-</section>
 <section id="whoami" class="slide level1">
 <h1><code>whoami</code></h1>
 <h3 id="filipe-fernandes">Filipe Fernandes</h3>
-<h4 id="ocefpaf">(<a href="(https://github.com/ocefpaf)">ocefpaf</a>)</h4>
-<p><img data-src="images/twitter-github.png" /></p>
-<p>… g-mail, google+, etc.</p>
+<ul>
+<li class="fragment">Physical Oceanographer</li>
+<li class="fragment">Data Plumber</li>
+<li class="fragment">Code Janitor</li>
+<li class="fragment">Amazon-Dash-Button for conda-forge</li>
+</ul>
 </section>
 <section id="previous-talks-standards" class="slide level1">
 <h1>Previous talks: standards</h1>
@@ -169,7 +168,7 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
 <td>XML/CSV</td>
 </tr>
 <tr class="even">
-<td>Gridded data (modes, satellite)</td>
+<td>Gridded data (models, satellite)</td>
 <td>OPeNDAP</td>
 <td>Binary</td>
 </tr>
@@ -226,8 +225,8 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
 <p><a href="http://localhost:8888/notebooks/00-SOS.ipynb"> <img src="images/jupyterhub.svg" height=75 style="background-color:white"> </a></p>
 </div>
 </section>
-<section id="climate-and-forecast" class="slide level1">
-<h1>Climate and Forecast</h1>
+<section id="opendapclimate-and-forecast" class="slide level1">
+<h1>OPeNDAP/Climate and Forecast</h1>
 <p>(CF)</p>
 <iframe src="http://cfconventions.org/" width="750px" height="450px">
 </iframe>
@@ -262,16 +261,21 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
 </section>
 <section id="erddap" class="slide level1">
 <h1>ERDDAP</h1>
-<p>The data server that the cool kids are using.</p>
+<p>The data server that the cool kids are using</p>
 <ul>
 <li class="fragment">Quick adoption by the community</li>
-<li class="fragment">Flexibly outputs: <code>.html</code> table, ESRI <code>.asc</code> and <code>.csv</code>, Google Earth <code>.kml</code>, OPeNDAP binary, <code>.mat</code>, <code>.nc</code>, ODV <code>.txt</code>, <code>.csv</code>, <code>.tsv</code>, <code>.json</code>, and `.xhtml</li>
+<li class="fragment">Flexibly outputs: <code>.html</code> table, ESRI <code>.asc</code> and <code>.csv</code>, Google Earth <code>.kml</code>, OPeNDAP binary, <code>.mat</code>, <code>.nc</code>, ODV <code>.txt</code>, <code>.csv</code>, <code>.tsv</code>, <code>.json</code>, and <code>.xhtml</code></li>
 <li class="fragment">Free RESTful API to access the data</li>
 <li class="fragment">Standardize dates and time in the results</li>
+<li class="fragment">Server-side slicing</li>
 </ul>
 <div class="fragment">
 <p><a href="http://localhost:8888/notebooks/03-ERDDAP.ipynb"> <img src="images/jupyterhub.svg" height=75 style="background-color:white"> </a></p>
 </div>
+</section>
+<section id="there-are-many-moving-parts" class="slide level1">
+<h1>There are many moving parts</h1>
+<p><img data-src="images/grind_gears.gif" /></p>
 </section>
 <section id="catalog-service-for-the-web" class="slide level1">
 <h1>Catalog Service for the Web</h1>
@@ -284,10 +288,6 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
 <div class="fragment">
 <p><img src="images/one_ring.jpg" height=75 style="background-color:white"></p>
 </div>
-</section>
-<section id="there-are-many-moving-parts" class="slide level1">
-<h1>There are many moving parts</h1>
-<p><img data-src="images/grind_gears.gif" /></p>
 </section>
 <section id="harvesting" class="slide level1">
 <h1>Harvesting</h1>
@@ -328,21 +328,23 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
 <section id="non-notebook-examples" class="slide level1">
 <h1>Non-notebook examples</h1>
 <ul>
-<li class="fragment">https://ioos.noaa.gov/data/catalog/</li>
-<li class="fragment">https://portal.secoora.org</li>
+<li><a href="https://ioos.noaa.gov/data/catalog" class="uri">https://ioos.noaa.gov/data/catalog</a></li>
+<li><a href="https://portal.secoora.org" class="uri">https://portal.secoora.org</a></li>
 </ul>
 </section>
 <section id="summary" class="slide level1">
 <h1>Summary</h1>
 <ul>
 <li class="fragment">Standards, web services and catalogs allow us to serve data in a unified way</li>
-</ul>
-<ul>
-<li class="fragment">Python powered Jupyter gives us a powerful scientific, analysis and visualization environment to fetch and explore data</li>
+<li class="fragment">Python powered Jupyter gives us a powerful scientific, analysis and visualization environment to fetch</li>
+<li class="fragment">Widgets allow for fancy data exploration</li>
 </ul>
 </section>
 <section id="questions" class="slide level1">
 <h1>Questions?</h1>
+<h4 id="ocefpaf">(<a href="(https://github.com/ocefpaf)">ocefpaf</a>)</h4>
+<p><img data-src="images/twitter-github.png" /></p>
+<p>… g-mail, google+, etc.</p>
 </section>
     </div>
   </div>

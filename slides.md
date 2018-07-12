@@ -4,19 +4,15 @@ title: Building your own Weather App using NOAA Open Data and Jupyter Notebooks
 date: Jul 13, 2018
 ---
 
-# A more honest title
-
-I'm going to talk about NOAA data workflow
-and only show nice notebooks in the end.
 
 # `whoami`
 
 ### Filipe Fernandes
-#### ([ocefpaf]((https://github.com/ocefpaf)))
 
-![](images/twitter-github.png)
-
-... g-mail, google+, etc.
+>- Physical Oceanographer
+>- Data Plumber
+>- Code Janitor
+>- Amazon-Dash-Button for conda-forge
 
 
 # Previous talks: standards
@@ -72,7 +68,7 @@ and only show nice notebooks in the end.
 | Data Type                              | Web Service                       | Response     |
 |----------------------------------------|-----------------------------------|--------------|
 | In-situ data<br>(buoys, stations, etc) | OGC SOS                           | XML/CSV      |
-| Gridded data (modes, satellite)        | OPeNDAP                           | Binary       |
+| Gridded data (models, satellite)        | OPeNDAP                           | Binary       |
 | Raster Images                          | OGC WMS                           | GeoTIFF/PNG |
 
 
@@ -130,7 +126,7 @@ url = (
 </a>
 
 
-# Climate and Forecast 
+# OPeNDAP/Climate and Forecast 
 
 (CF)
 
@@ -175,18 +171,25 @@ double s_rho(s_rho);
 
 # ERDDAP
 
-The data server that the cool kids are using.
+The data server that the cool kids are using
 
 >- Quick adoption by the community
->- Flexibly outputs: `.html` table, ESRI `.asc` and `.csv`, Google Earth `.kml`, OPeNDAP binary, `.mat`, `.nc`, ODV `.txt`, `.csv`, `.tsv`, `.json`, and `.xhtml
+>- Flexibly outputs: `.html` table, ESRI `.asc` and `.csv`, Google Earth `.kml`, OPeNDAP binary, `.mat`, `.nc`, ODV `.txt`, `.csv`, `.tsv`, `.json`, and `.xhtml`
 >- Free RESTful API to access the data
 >- Standardize dates and time in the results
+>- Server-side slicing
 
 . . . 
 
 <a href="http://localhost:8888/notebooks/03-ERDDAP.ipynb">
   <img src="images/jupyterhub.svg" height=75 style="background-color:white">
 </a>
+
+
+# There are many moving parts
+
+![](images/grind_gears.gif)
+
 
 
 # Catalog Service for the Web
@@ -200,11 +203,6 @@ The data server that the cool kids are using.
 . . . 
 
 <img src="images/one_ring.jpg" height=75 style="background-color:white">
-
-
-# There are many moving parts
-
-![](images/grind_gears.gif)
 
 
 # Harvesting
@@ -266,14 +264,20 @@ Finally the title notebook!
 
 # Non-notebook examples
 
->- https://ioos.noaa.gov/data/catalog/
->- https://portal.secoora.org
+- [https://ioos.noaa.gov/data/catalog](https://ioos.noaa.gov/data/catalog)
+- [https://portal.secoora.org](https://portal.secoora.org)
 
 # Summary
 
 >- Standards, web services and catalogs allow us to serve data in a unified way
-
->- Python powered Jupyter gives us a powerful scientific, analysis and visualization environment to fetch and explore data
+>- Python powered Jupyter gives us a powerful scientific, analysis and visualization environment to fetch
+>- Widgets allow for fancy data exploration
 
 
 # Questions?
+
+#### ([ocefpaf]((https://github.com/ocefpaf)))
+
+![](images/twitter-github.png)
+
+... g-mail, google+, etc.
