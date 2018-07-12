@@ -1,0 +1,47 @@
+name: IOOS
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6
+  - appmode
+  - bokeh
+  - bqplot
+  - cartopy
+  - erddapy
+  - fiona
+  - folium
+  - gdal
+  - geojson
+  - geojsonio
+  - geolinks
+  - geopandas
+  - gridgeo
+  - gsw
+  - ioos_tools
+  - ipyleaflet
+  - iris>=1.12
+  - jupyter
+  - matplotlib
+  - nb_conda_kernels
+  - netcdf4
+  - numpy
+  - owslib
+  - palettable
+  - pandas
+  - phantomjs
+  - pocean-core
+  - pykdtree
+  - pyoos
+  - pyproj
+  - rasterio
+  - requests
+  - retrying
+  - scipy
+  - seawater
+  - selenium
+  - sensorml2iso
+  - shapely
+  - siphon
+  - xarray
+  - xlrd
