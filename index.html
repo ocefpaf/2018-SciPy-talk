@@ -105,7 +105,7 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
 
 <section id="whoami" class="slide level1">
 <h1><code>whoami</code></h1>
-<h3 id="filipe-fernandes">Filipe Fernandes</h3>
+<p>Filipe Fernandes</p>
 <ul>
 <li class="fragment">Physical Oceanographer</li>
 <li class="fragment">Data Plumber</li>
@@ -181,7 +181,7 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
 </tbody>
 </table>
 <div class="fragment">
-<p>There is also <code>ERDDAP</code> but we are not going to talk about it right now…</p>
+<p>There is also <code>ERDDAP</code> emerging as a community standard.</p>
 </div>
 </section>
 <section id="sensor-observation-service" class="slide level1">
@@ -262,13 +262,12 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
 </section>
 <section id="erddap" class="slide level1">
 <h1>ERDDAP</h1>
-<p>The data server that the cool kids are using</p>
+<p>The data server that the community is demanding</p>
 <ul>
-<li class="fragment">Quick adoption by the community</li>
-<li class="fragment">Flexibly outputs: <code>.html</code> table, ESRI <code>.asc</code> and <code>.csv</code>, Google Earth <code>.kml</code>, OPeNDAP binary, <code>.mat</code>, <code>.nc</code>, ODV <code>.txt</code>, <code>.csv</code>, <code>.tsv</code>, <code>.json</code>, and <code>.xhtml</code></li>
+<li class="fragment">Flexible outputs: <code>.html</code> table, ESRI <code>.asc</code> and <code>.csv</code>, Google Earth <code>.kml</code>, OPeNDAP binary, <code>.mat</code>, <code>.nc</code>, ODV <code>.txt</code>, <code>.csv</code>, <code>.tsv</code>, <code>.json</code>, and <code>.xhtml</code></li>
 <li class="fragment">Free RESTful API to access the data</li>
 <li class="fragment">Standardize dates and time in the results</li>
-<li class="fragment">Server-side slicing</li>
+<li class="fragment">Server-side searching and slicing</li>
 </ul>
 <div class="fragment">
 <p><a href="http://localhost:8888/notebooks/03-ERDDAP.ipynb"> <img src="images/jupyterhub.svg" height=75 style="background-color:white"> </a></p>
@@ -297,12 +296,12 @@ code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
 <section id="finding-the-web-services" class="slide level1">
 <h1>Finding the web services</h1>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> geolinks <span class="im">import</span> sniff_link</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/wms?service=WMS&#39;</span>)</a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">&#39;OGC:WMS&#39;</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/wms?service=WPS&#39;</span>)</a>
-<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="co">&#39;OGC:WPS&#39;</span></a>
-<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/wms?service=CSW&#39;</span>)</a>
-<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="co">&#39;OGC:CSW&#39;</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/wms?service=SOS&#39;</span>)</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">&#39;OGC:SOS&#39;</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/wms?service=OPeNDAP:OPeNDAP&#39;</span>)</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="co">&#39;OPeNDAP:OPeNDAP&#39;</span></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/wms?service=WMS&#39;</span>)</a>
+<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="co">&#39;OGC:WMS&#39;</span></a>
 <a class="sourceLine" id="cb4-8" data-line-number="8"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/data/roads.kmz&#39;</span>)</a>
 <a class="sourceLine" id="cb4-9" data-line-number="9"><span class="co">&#39;OGC:KML&#39;</span></a>
 <a class="sourceLine" id="cb4-10" data-line-number="10"><span class="op">&gt;&gt;&gt;</span> sniff_link(<span class="st">&#39;http://host/data/roads.kml&#39;</span>)</a>

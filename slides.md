@@ -7,7 +7,7 @@ date: Jul 13, 2018
 
 # `whoami`
 
-### Filipe Fernandes
+Filipe Fernandes
 
 >- Physical Oceanographer
 >- Data Plumber
@@ -75,7 +75,7 @@ date: Jul 13, 2018
 
 . . .
 
-There is also `ERDDAP` but we are not going to talk about it right now...
+There is also `ERDDAP` emerging as a community standard.
 
 # Sensor Observation Service
 
@@ -172,13 +172,12 @@ double s_rho(s_rho);
 
 # ERDDAP
 
-The data server that the cool kids are using
+The data server that the community is demanding
 
->- Quick adoption by the community
->- Flexibly outputs: `.html` table, ESRI `.asc` and `.csv`, Google Earth `.kml`, OPeNDAP binary, `.mat`, `.nc`, ODV `.txt`, `.csv`, `.tsv`, `.json`, and `.xhtml`
+>- Flexible outputs: `.html` table, ESRI `.asc` and `.csv`, Google Earth `.kml`, OPeNDAP binary, `.mat`, `.nc`, ODV `.txt`, `.csv`, `.tsv`, `.json`, and `.xhtml`
 >- Free RESTful API to access the data
 >- Standardize dates and time in the results
->- Server-side slicing
+>- Server-side searching and slicing
 
 . . . 
 
@@ -217,12 +216,12 @@ The data server that the cool kids are using
 
 ```python
 >>> from geolinks import sniff_link
+>>> sniff_link('http://host/wms?service=SOS')
+'OGC:SOS'
+>>> sniff_link('http://host/wms?service=OPeNDAP:OPeNDAP')
+'OPeNDAP:OPeNDAP'
 >>> sniff_link('http://host/wms?service=WMS')
 'OGC:WMS'
->>> sniff_link('http://host/wms?service=WPS')
-'OGC:WPS'
->>> sniff_link('http://host/wms?service=CSW')
-'OGC:CSW'
 >>> sniff_link('http://host/data/roads.kmz')
 'OGC:KML'
 >>> sniff_link('http://host/data/roads.kml')

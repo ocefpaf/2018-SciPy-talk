@@ -26,6 +26,7 @@ dependencies:
   - pendulum
   - pyoos
   - retrying
+  - rise
   - shapely
   - xlrd
   - pip:
