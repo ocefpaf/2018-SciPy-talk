@@ -122,7 +122,7 @@ url = (
 
 . . .
 
-<a href="http://localhost:8888/notebooks/00-SOS.ipynb">
+<a href="https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages?filepath=notebooks/00-SOS.ipynb">
   <img src="images/jupyterhub.svg" height=75 style="background-color:white">
 </a>
 
@@ -151,7 +151,7 @@ double s_rho(s_rho);
 
 . . .
 
-<a href="http://localhost:8888/notebooks/01-ClimateForecast.ipynb">
+<a href="https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages?filepath=notebooks/01-ClimateForecast.ipynb">
   <img src="images/jupyterhub.svg" height=75 style="background-color:white">
 </a>
 
@@ -166,7 +166,7 @@ double s_rho(s_rho);
 
 . . .
 
-<a href="http://localhost:8888/notebooks/02-WMS.ipynb">
+<a href="https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages?filepath=notebooks/02-WMS.ipynb">
   <img src="images/jupyterhub.svg" height=75 style="background-color:white">
 </a>
 
@@ -181,7 +181,7 @@ The data server that the community is demanding
 
 . . . 
 
-<a href="http://localhost:8888/notebooks/03-ERDDAP.ipynb">
+<a href="https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages?filepath=notebooks/03-ERDDAP.ipynb">
   <img src="images/jupyterhub.svg" height=75 style="background-color:white">
 </a>
 
@@ -230,7 +230,7 @@ The data server that the community is demanding
 
 . . .
 
-<a href="http://localhost:8888/notebooks/04-CSW.ipynb">
+<a href="https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages?filepath=notebooks/04-CSW.ipynb">
   <img src="images/jupyterhub.svg" height=75 style="background-color:white">
 </a>
 
@@ -239,7 +239,7 @@ The data server that the community is demanding
 
 Meteorological stations in a National Hurricane Center path prediction.
 
-<a href="http://localhost:8888/notebooks/2017-09-09-hurricane_irma.ipynb">
+<a href="https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages?filepath=notebooks/2017-09-09-hurricane_irma.ipynb">
   <img src="images/hurricane-irma.png" height=150 style="background-color:white">
 </a>
 
@@ -248,7 +248,7 @@ Meteorological stations in a National Hurricane Center path prediction.
 
 Modeled Significant Wave Height skill
 
-<a href="http://localhost:8888/notebooks/2018-03-30-wave_height_assessment.ipynb">
+<a href="https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages?filepath=notebooks/2018-03-30-wave_height_assessment.ipynb">
   <img src="images/wave-height.png" height=110 style="background-color:white">
 </a>
 
@@ -256,7 +256,7 @@ Modeled Significant Wave Height skill
 
 Finally the title notebook!
 
-<a href="http://localhost:8888/notebooks/ERDDAP_timeseries_explorer-IOOS.ipynb">
+<a href="https://mybinder.org/v2/gh/ocefpaf/2018-SciPy-talk/gh-pages?filepath=notebooks/ERDDAP_timeseries_explorer-IOOS.ipynb">
   <img src="images/erddap_app.png" height=400 style="background-color:white">
 </a>
 
